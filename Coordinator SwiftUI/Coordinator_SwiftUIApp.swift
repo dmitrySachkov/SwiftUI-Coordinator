@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Coordinator_SwiftUIApp: App {
+    @State private var library = Library()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoordinatorStack(MainCoordinatorPages.root)
         }
     }
 }
+
